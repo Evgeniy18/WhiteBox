@@ -14,14 +14,10 @@ namespace WhiteBox
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //float a = (float)Convert.ToDouble(textBox1.Text);
-            //float b = (float)Convert.ToDouble(textBox2.Text);
-            //float c = (float)Convert.ToDouble(textBox3.Text);
-            //float d = (float)Convert.ToDouble(textBox4.Text);
             int res1 = 0;
             int res2 = 0;
             int i = 0;
-            StreamWriter sw = new StreamWriter("D:\\Study\\Тестирование\\Тест комбинаторного покрытия условий (не пройдено).txt");
+            StreamWriter sw = new StreamWriter("..\\..\\Тест комбинаторного покрытия условий (не пройдено).txt");
             int limCondition = 4;
 
             //Решение задачи
@@ -89,8 +85,8 @@ namespace WhiteBox
 
             //                if (res1 == res2)
             //                {
-            //                i++;
-            //                sw.WriteLine(i + ") " + a + ", " + b + ", " + c + ", " + d + " --  res1 = " + res1 + ", res2 = " + res2);
+            //                    i++;
+            //                    sw.WriteLine(i + ") " + a + ", " + b + ", " + c + ", " + d + " --  res1 = " + res1 + ", res2 = " + res2);
             //                }
             //                textBox5.Text = i.ToString();
             //            }
@@ -352,7 +348,7 @@ namespace WhiteBox
             }
 
             sw.Close();
-            Process.Start("D:\\Study\\Тестирование\\Тест комбинаторного покрытия условий (не пройдено).txt");
+            Process.Start("..\\..\\Тест комбинаторного покрытия условий (не пройдено).txt");
             textBox5.Text = "Готово";
         }
     }
